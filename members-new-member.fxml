@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="640.0">
+         <children>
+            <MenuBar cache="true" maxWidth="-Infinity" prefHeight="34.0" prefWidth="322.0" style="-fx-background-color: yellow;">
+               <menus>
+                  <Menu mnemonicParsing="false" style="-fx-text-fill: white;" text="Actions">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="New member" />
+                        <MenuItem mnemonicParsing="false" text="Edit member" />
+                        <MenuItem mnemonicParsing="false" text="Remove member" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="New group" />
+                        <MenuItem mnemonicParsing="false" text="Edit group" />
+                        <MenuItem mnemonicParsing="false" text="Add member to group" />
+                        <MenuItem mnemonicParsing="false" text="Remove member from group" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Print" />
+                        <MenuItem mnemonicParsing="false" text="Help" />
+                        <MenuItem mnemonicParsing="false" text="Quit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Members" />
+                  <Menu mnemonicParsing="false" text="Groups" />
+               </menus>
+            </MenuBar>
+            <HBox layoutX="319.0" prefHeight="34.0" prefWidth="322.0" style="-fx-background-color: yellow;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="323.0" text="Gamer register - Members">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: blue;" VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.5007836990595611" prefHeight="372.0" prefWidth="640.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <SplitPane dividerPositions="0.3689189189189189" orientation="VERTICAL" prefHeight="372.0" prefWidth="316.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="103.0" prefWidth="314.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="135.0" prefWidth="315.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: blue;" text="New member" textFill="#c2d706">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" text="Add member to group" />
+                                          <Button mnemonicParsing="false" text="Remove member">
+                                             <VBox.margin>
+                                                <Insets top="20.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.34134615384615385" prefHeight="121.0" prefWidth="314.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <VBox prefHeight="121.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Label prefHeight="34.0" prefWidth="100.0" text="Name:" />
+                                                      <Label prefHeight="36.0" prefWidth="100.0" text="Gamer tag:" />
+                                                      <Label prefHeight="34.0" prefWidth="105.0" text="Email:" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="187.0">
+                                             <children>
+                                                <VBox prefHeight="121.0" prefWidth="119.0">
+                                                   <children>
+                                                      <Label prefHeight="34.0" prefWidth="100.0" text="Jesse James" />
+                                                      <Label prefHeight="36.0" prefWidth="100.0" text="ShotgunJames" />
+                                                      <Label prefHeight="34.0" prefWidth="105.0" text="gaugeMan@testi.fi" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                    <Pane layoutY="121.0" prefHeight="107.0" prefWidth="315.0">
+                                       <children>
+                                          <Button layoutX="72.0" layoutY="41.0" mnemonicParsing="false" text="Save" />
+                                          <Button layoutX="175.0" layoutY="42.0" mnemonicParsing="false" text="Reset" />
+                                       </children>
+                                    </Pane>
+                                 </children></AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="26.0" prefHeight="0.0" prefWidth="316.0" text="Members list">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="list1" layoutY="66.0" prefHeight="306.0" prefWidth="315.0">
+                           <columns>
+                              <TableColumn fx:id="nameColumn1" prefWidth="73.0" text="Name" />
+                              <TableColumn fx:id="gamerTagColumn1" prefWidth="100.0" text="Gamer tag" />
+                              <TableColumn fx:id="gamerTagColumn11" minWidth="0.0" prefWidth="63.0" text="Email" />
+                              <TableColumn fx:id="gamerTagColumn111" prefWidth="74.0" text="Created" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
